@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-immersive-bg: #0c0c0c;
+  --color-immersive-accent: #22c55e; /* green-500 */
+  --color-immersive-accent-dark: #15803d; /* green-700 */
+  --color-immersive-stone: #1c1917; /* stone-900ish */
+  --color-immersive-border: rgba(41, 37, 36, 0.5); /* stone-800/50 */
+}
+
+body {
+  background: radial-gradient(circle at 70% 30%, #0a2a12 0%, #0c0c0c 70%), #0c0c0c;
+  color: #e7e5e4; /* stone-200 */
+}
+
+.glass-panel {
+  background: rgba(28, 25, 23, 0.4); /* stone-900/40 */
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(41, 37, 36, 1); /* stone-800 */
+}
+
+.markdown-body strong {
+  font-weight: 700;
+  color: #fff;
+}
+
+.markdown-body p {
+  margin-bottom: 0.5rem;
+}
+
+.markdown-body p:last-child {
+  margin-bottom: 0;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(41, 37, 36, 0.5);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(245, 158, 11, 0.2);
+}
